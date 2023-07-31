@@ -1,0 +1,76 @@
+#ComingSoon {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+
+#ComingSoon .spinner{
+    width:150px;
+    height: auto;
+    margin: 0 auto;
+}
+#ComingSoon .spinner p{
+    color: #473347;
+    font-size: 20px;
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    animation: opacity 1s infinite;
+}
+#ComingSoon .main{
+    width:100%;
+    height: 150px;
+    border: 2px solid gray;
+    margin: 0 auto;
+    position: relative;
+    animation: opacity 5s 1s infinite;
+}
+
+#ComingSoon .second{
+    width:70%;
+    height: 70%;
+    margin: 13% auto;
+    border: 2px solid gray ;
+    border-radius: 20%;
+    animation:border 5s infinite, rotate 5s infinite, background02 3s infinite;
+}
+.third{
+    width:70%;
+    height: 70%;
+    margin:11% auto;
+    border: 4px solid white ;
+    border-radius: 50%;
+    animation: border 5s infinite, rotate 5s infinite ,background 5s infinite;
+}
+
+
+@keyframes border{
+    0% { border-color: gray;}
+    50% { border-color: #fff;}
+    100% { border-color: gray;}
+}
+@keyframes opacity{
+    0% { opacity: 1;}
+    50% { opacity: 0.5;}
+    100% { opacity: 1;}
+}
+@keyframes background{
+    0% {background:#042A2B;}
+    50% {background:#e57961;}
+    100% {background: #950000;}
+}
+@keyframes background02{
+    0% {background:#fff;}
+    50% {background:#518FB8;}
+    100% {background: #fff;}
+}
+@keyframes rotate{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(180deg);}
+}
+@keyframes rotate2{
+    from{transform: rotate(-180deg);}
+    to{transform: rotate(0deg);}
+}

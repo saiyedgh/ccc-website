@@ -1,0 +1,219 @@
+nav {
+    font-size: var(--font-nav);
+}
+
+.ccc-logo {
+    width: calc(80px + 1vw);
+    display: block;
+    margin: auto;
+}
+
+.milhouse-logo {
+    width: calc(150px + 0.1vw);
+    display: block;
+    margin: auto;
+    padding: 0.5rem 0;
+}
+
+.header-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+    color: whitesmoke;
+    position: relative;
+}
+
+.header-container .logo-container {
+    padding: 0.5rem 0;
+    position: absolute;
+    left: 1%;
+}
+
+.nav-outer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.nav-upper {
+    padding: 1rem 0 1rem calc(100px + 1vw);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto 0;
+    background-color: var(--bg-color-01);
+
+}
+
+.nav-upper, .nav-upper-inner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.nav-upper-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+}
+
+.nav-upper-inner-left h5 {
+    margin: 0;
+}
+
+.nav-upper-inner-left {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+}
+
+.nav-upper-inner-right {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+}
+
+.mobile-nav-container, .nav-links-01, .nav-links-01 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: calc((var(--font-size-02)) + 0.5vw);
+    font-weight: 400;
+    padding: 5px 10px 5px 5px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+    color: #9EACFA;
+}
+
+.menu {
+    font-size: 2rem;
+}
+
+.nav-menu {
+    display: none;
+}
+
+nav.mobile-nav-container {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.nav-menu.active {
+    display: block;
+    padding: 1rem;
+    background-color: hsla(300, 16%, 36%, 0.98);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}
+
+.nav-menu.active ul, .nav-menu.active li {
+    padding: 0.5rem;
+}
+
+.nav-menu.active li {
+    font-size: calc((var(--font-nav)) + 1px + 0.1vw);
+}
+
+.nav-menu.active a {
+    color: whitesmoke;
+}
+
+nav.nav-links-container {
+    display: none;
+    padding: 0.5rem 0 0.5rem calc(100px + 1vw);
+}
+
+.close {
+    display: block;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.header-container .nav-upper-menu-container a {
+    color: whitesmoke;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .header-container {
+        border-bottom: 1px solid hsla(216, 12%, 8%, 0.5);
+    }
+    .milhouse-logo {
+        margin: auto 0 auto auto;
+        padding: 0.5rem 1rem;
+    }
+    .nav-upper {
+        padding: 0 0 0 calc(100px + 1vw);
+    }
+    .nav-upper-inner-left {
+        padding: 10px;
+    }
+    .nav-upper-inner {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        width: 100%;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .mobile-nav-container, .nav-links-01, .nav-links-01 {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+    nav.nav-links-container{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: unset;
+        width: 100%;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .menu, .close {
+        display: none;
+    }
+    .nav-links-container {
+        display: block;
+    }
+    .header-container a {
+        color: var(--bg-color-01);
+    }
+}

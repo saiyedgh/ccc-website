@@ -1,0 +1,129 @@
+#Squad {
+    background-color: var(--bg-color-02);
+    text-align: center;
+    height: 50vh;
+    padding: 1rem;
+}
+
+.squad-container {
+    position: relative;
+    top: calc(50% - (0.75rem + 4vw));
+}
+
+.squad {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.squad-inner {
+    white-space: nowrap;
+    -webkit-transition: ease 1s;
+    -o-transition: ease 1s;
+    transition: ease 1s;
+}
+
+.squad-item {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+
+.squad-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: calc(50% - 15px);
+    color: #f3f3f3;
+    cursor: pointer;
+    z-index: 15;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.squad-indicators {
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+    bottom: 1rem;
+    z-index: 5;
+  }
+
+.squad-indicator-item {
+    width: 10px;
+    height: 10px;
+    border: none;
+    background: #fff;
+    opacity: 0.5;
+    margin: 0.2em;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 0.25rem;
+}
+
+.active {
+    opacity: 1; 
+}
+
+/* ---------------- */
+
+.squad-item img {
+    width: 100vw;
+    max-width: 1920px;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 10% 20%;
+       object-position: 10% 20%;
+}
+
+/* .squad-item p {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    z-index: 11;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 3rem;
+} */
+
+.squad .player-number {
+    font-family: var(--font-family-02);
+    font-size: calc(1rem + 4vw);
+}
+
+.squad h6 {
+    font-family: var(--font-family-02);
+    font-size: calc(0.5rem + 4vw);
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.squad .last-name {
+    color: #ffda0a;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #Squad {
+        height: 75vh;
+        padding: 2rem;
+    }
+    .squad-item img {
+        height: 80vh;
+    }
+}
