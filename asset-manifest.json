@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ccc-website/static/css/main.4f24ea9e.css",
+    "main.js": "/ccc-website/static/js/main.8843f599.js",
+    "static/media/ccc-logo.png": "/ccc-website/static/media/ccc-logo.f7dea9cdba069de2cc0d.png",
+    "static/media/milhouse_symbol.png": "/ccc-website/static/media/milhouse_symbol.07d3d9b2ab4b8b5b58e2.png",
+    "static/media/milhouse_logo.png": "/ccc-website/static/media/milhouse_logo.e72c2eaee17829efe6ab.png",
+    "index.html": "/ccc-website/index.html",
+    "main.4f24ea9e.css.map": "/ccc-website/static/css/main.4f24ea9e.css.map",
+    "main.8843f599.js.map": "/ccc-website/static/js/main.8843f599.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f24ea9e.css",
+    "static/js/main.8843f599.js"
+  ]
+}
